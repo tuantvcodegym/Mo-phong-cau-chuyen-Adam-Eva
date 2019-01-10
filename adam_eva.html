@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau chuyen Adam - Eva</title>
+</head>
+<body>
+<input type="button" id="btn" onclick="a.adam()" value="Adam an">
+<input type="button" id="btn2" onclick="a.eva()" value="Eva an">
+<div id="show"></div>
+<div id="show2"></div>
+<script>
+    function Apple(weight, status) {
+        this.weight = weight;
+        this.status = status;
+    }
+
+    function check() {
+        apple.status = true;
+        if(apple.status > 1){
+            apple.status = true;
+        }else {
+            apple.status = false;
+        }
+    }
+    var apple = new Apple(10, status);
+    
+    function Human(name, gender, weight) {
+        this.name = name;
+        this.gender = gender;
+        this.weight = weight;
+
+        this.adam =function () {
+            if(apple.weight > 0){
+                a.weight ++;
+                apple.weight --;
+                console.log('anh cung muon an');
+            }
+            document.getElementById('show').innerHTML = 'Adam da an va da tang len ' + a.weight + ' Kg ' + ' qua tao con ' + apple.weight;
+        };
+
+        this.eva =function () {
+            if (apple.weight > 0) {
+                e.weight++;
+                apple.weight--;
+                console.log('Adam, anh co muon an trai tao nay khong');
+            }
+            document.getElementById('show2').innerHTML = 'Eva da an va da tang len ' + e.weight + ' Kg ' + ' qua tao con ' + apple.weight;
+        }
+    }
+    var a = new Human('Adam', 'Nam', 50);
+    var e = new Human('Eva', 'Nu', 45);
+</script>
+</body>
+</html>
